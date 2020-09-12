@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>获取文件并显示</title>
+  <link rel="stylesheet" href="../css/get_files.css">
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script src="../js/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <p class="img_name">获取图片信息</p>
+    <img src="/static/img/get_files.png" alt="" class="show_img_area">
+    <div class="btns">
+      <button id="btn1">img1</button>
+      <button id="btn2">img2</button>
+      <button id="btn3">img3</button>
+      <button id="btn4">img4</button>
+    </div>
+  </div>
+  <script src="/static/js/get_files.js"></script>
+  <script>
+    $(() => {
+      //img1
+      $('#btn1').click(() => {
+          getImageMessage('/login','name=' + $('#btn1').text())
+      })
+
+      // //img2
+      $('#btn2').click(() => {
+          getImageMessage('/login','name=' + $('#btn2').text())
+      })
+
+      // //img3
+      $('#btn3').click(() => {
+          getImageMessage('/login','name=' + $('#btn3').text())
+      })
+
+      // // img4
+      $('#btn4').click(() => {
+          getImageMessage('/login','name=' + $('#btn4').text())
+      })
+
+
+    })
+  </script>
+</body>
+
+</html>

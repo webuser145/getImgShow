@@ -1,0 +1,7 @@
+要求：点击按钮，通过ajax发送请求，后端进行响应，并返回数据，前端拿到数据通过dom操作进行展示
+
+netstat -aon | findstr "80" //  查看80端口被那个进程占用
+
+taskkill/pid 4 /F  // 终止pid为4的进程
+
+tasklist | findstr "4"  // 确定pid为4的进程是否被终止，终止成功返回null
